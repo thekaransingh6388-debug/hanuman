@@ -6,7 +6,7 @@
   <title>Mehta Is Back • Stock Market Official</title>
   <meta name="description" content="Join Mehta Is Back for NIFTY, BANKNIFTY & Stock Options - Live analysis, 85% accuracy, daily premium calls">
 
-  <!-- ========== META PIXEL (ID: 1358475565845615) ========== -->
+  <!-- ========== NEW META PIXEL (ID: 2645860795884174) ========== -->
   <script>
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -16,16 +16,16 @@
     t.src=v;s=b.getElementsByTagName(e)[0];
     s.parentNode.insertBefore(t,s)}(window, document,'script',
     'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '1358475565845615');
+    fbq('init', '2645860795884174');
     fbq('track', 'PageView', {
       page_type: 'Telegram_Join_Mehta_Is_Back',
       niche: 'Stock_Market_Options_Nifty_BankNifty',
-      pixel_id: '1358475565845615'
+      pixel_id: '2645860795884174'
     });
-    console.log('✅ Meta Pixel Initialized - ID: 1358475565845615');
+    console.log('✅ Meta Pixel Initialized - ID: 2645860795884174');
   </script>
   <noscript>
-    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1358475565845615&ev=PageView&noscript=1"/>
+    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=2645860795884174&ev=PageView&noscript=1"/>
   </noscript>
   <!-- END META PIXEL CODE -->
 
@@ -231,16 +231,16 @@
     <div class="brand-name">MEHTA IS BACK</div>
     <div class="tagline"><span>🎯 NIFTY • BANKNIFTY • OPTIONS MASTER 🎯</span></div>
     
-    <!-- FIRST JOIN BUTTON -->
+    <!-- FIRST JOIN BUTTON - UPDATED LINK -->
     <div class="btn-wrap">
-      <a id="joinBtnTop" href="#" target="_blank" class="tele-btn" data-button-name="Join Button Primary (Below Name)" data-position="first_under_name">
+      <a id="joinBtnTop" href="https://t.me/+qKJAFH2FDFkyNTQ1" target="_blank" rel="noopener noreferrer" class="tele-btn" data-button-name="Join Button Primary (Below Name)" data-position="first_under_name">
         🚀 JOIN TELEGRAM CHANNEL
       </a>
     </div>
     
-    <!-- SECOND JOIN BUTTON -->
+    <!-- SECOND JOIN BUTTON - UPDATED LINK -->
     <div class="bottom-btn">
-      <a id="joinBtnBottom" href="#" target="_blank" class="tele-btn" data-button-name="Join Button Secondary (Below Name 2)" data-position="second_under_name">
+      <a id="joinBtnBottom" href="https://t.me/+qKJAFH2FDFkyNTQ1" target="_blank" rel="noopener noreferrer" class="tele-btn" data-button-name="Join Button Secondary (Below Name 2)" data-position="second_under_name">
         ⚡ GET FREE CALLS → JOIN NOW
       </a>
     </div>
@@ -274,14 +274,14 @@
 <script>
   (function() {
     // ============================================================
-    // PIXEL ID: 1358475565845615 (NEW)
-    // TELEGRAM LINK: https://t.me/+6vryqt_h4CFiOTVl
+    // PIXEL ID: 2645860795884174 (NEW)
+    // TELEGRAM LINK: https://t.me/+qKJAFH2FDFkyNTQ1
     // COMPLETE EVENT TRACKING: Lead, Subscribe, CustomEvent,
     // Scroll Depth, Time on Page, Button Impressions
     // ============================================================
     const CONFIG = {
-      TELEGRAM_LINK: 'https://t.me/+6vryqt_h4CFiOTVl',
-      PIXEL_ID: '1358475565845615',
+      TELEGRAM_LINK: 'https://t.me/+qKJAFH2FDFkyNTQ1',
+      PIXEL_ID: '2645860795884174',
       CHANNEL_NAME: 'MEHTA_IS_BACK'
     };
     
@@ -336,26 +336,27 @@
       console.log(`[FB Pixel] ✅ Events fired: Lead, Subscribe, CustomEvent for "${buttonName}" at "${position}" (Pixel: ${CONFIG.PIXEL_ID})`);
     }
     
-    // Setup button with tracking and correct link
+    // Setup button with tracking
     function setupButtonWithTracking(button, defaultName, defaultPosition) {
       if (!button) return null;
       let buttonName = button.getAttribute('data-button-name') || defaultName;
       let position = button.getAttribute('data-position') || defaultPosition;
       
-      const newBtn = button.cloneNode(true);
-      if (button.parentNode) {
-        button.parentNode.replaceChild(newBtn, button);
-      }
-      newBtn.setAttribute('href', CONFIG.TELEGRAM_LINK);
-      newBtn.setAttribute('target', '_blank');
-      newBtn.setAttribute('rel', 'noopener noreferrer');
+      // Ensure correct href
+      button.setAttribute('href', CONFIG.TELEGRAM_LINK);
+      button.setAttribute('target', '_blank');
+      button.setAttribute('rel', 'noopener noreferrer');
       
-      newBtn.addEventListener('click', function(e) {
-        fireAllTrackingEvents(newBtn, buttonName, position);
-        // let the link open normally
+      // Remove existing listeners and add new one
+      button.removeEventListener('click', button._trackingHandler);
+      button._trackingHandler = function(e) {
+        fireAllTrackingEvents(button, buttonName, position);
+        // Allow navigation
         return true;
-      });
-      return newBtn;
+      };
+      button.addEventListener('click', button._trackingHandler);
+      
+      return button;
     }
     
     // Setup both buttons
@@ -413,7 +414,7 @@
       });
       fbq('trackCustom', 'LandingPageViewed_Mehta', {
         designer: 'MehtaIsBack',
-        version: '6.0_NewPixel_1358475565845615',
+        version: '6.0_NewPixel_2645860795884174',
         telegram_link: CONFIG.TELEGRAM_LINK,
         pixel_id: CONFIG.PIXEL_ID
       });
@@ -471,7 +472,7 @@
     // ========== GLOBAL DELEGATION: catch any telegram click (safety) ==========
     document.body.addEventListener('click', function(e) {
       const anchor = e.target.closest('a');
-      if (anchor && anchor.href && anchor.href.includes('t.me/+6vryqt_h4CFiOTVl')) {
+      if (anchor && anchor.href && anchor.href.includes('t.me/+qKJAFH2FDFkyNTQ1')) {
         if (!anchor.hasAttribute('data-telegram-tracked-final')) {
           let dynamicName = anchor.innerText.trim().slice(0, 50) || 'Telegram_Link_Mehta';
           let dynamicPos = 'delegation_click_handler';
@@ -535,10 +536,10 @@
 
 <!-- Fallback noscript images for additional event safety (new pixel) -->
 <noscript>
-  <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1358475565845615&ev=Lead&noscript=1"/>
-  <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1358475565845615&ev=Subscribe&noscript=1"/>
-  <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1358475565845615&ev=CustomEvent&noscript=1"/>
-  <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1358475565845615&ev=ViewContent&noscript=1"/>
+  <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=2645860795884174&ev=Lead&noscript=1"/>
+  <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=2645860795884174&ev=Subscribe&noscript=1"/>
+  <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=2645860795884174&ev=CustomEvent&noscript=1"/>
+  <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=2645860795884174&ev=ViewContent&noscript=1"/>
 </noscript>
 
 </body>
